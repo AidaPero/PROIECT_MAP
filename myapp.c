@@ -15,16 +15,16 @@ int esteCuloareDisponibila(struct Tara tari[], int taraIndex, int culoare, int n
     for (int i = 0; i < tari[taraIndex].numarVecini; i++) {
         int vecinIndex = tari[taraIndex].vecini[i];
         if (tari[vecinIndex].culoare == culoare) {
-            return 0; // Culoarea este deja folosita de un vecin
+            return 0; // Culoarea este deja folosită de un vecin
         }
     }
-    return 1; // Culoarea este disponibila
+    return 1; // Culoarea este disponibilă
 }
 
 void coloreazaHarta(struct Tara tari[], int numarTari, char culori[][20], int numarCulori) {
     for (int i = 0; i < numarTari; i++) {
         for (int j = 0; j < numarCulori; j++) {
-            if (esteCuloareDisponibila(tari, i, j, numarTari)) {
+            if (esteCuloareDisponibila(tari, i, j, numarTari) && j < tari[i].numarVecini) {
                 tari[i].culoare = j;
                 break;
             }
@@ -66,7 +66,7 @@ int main() {
         printf("Introduceti vecinii pentru tara %s (indicii separati prin spatiu (1-n)): ", tari[i].nume);
         for (int j = 0; j < numarVecini; j++) {
             scanf("%d", &tari[i].vecini[j]);
-            tari[i].vecini[j]--; // Indicele in program incepe de la 0
+            tari[i].vecini[j]--; // Indicele în program începe de la 0
             tari[i].numarVecini++;
         }
     }
