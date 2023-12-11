@@ -4,6 +4,8 @@
 
  Această problemă este o aplicație a ***TEORIEI GRAFURILOR***
 ![Diagramă a Teoriei Grafurilor](teoria_grafurilor.png)
+<img src="teoria_grafurilor.png" alt="Diagramă a Teoriei Grafurilor" width="300">
+
 
 
 
