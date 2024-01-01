@@ -8,14 +8,14 @@
 <img src="teoria_grafurilor.png" alt="Diagramă a Teoriei Grafurilor" width="400">
 
 
-##### Date de Intrare
+#### Date de Intrare
 Programul primește următoarele informații:
 1. Lista celor N țări, fiecare având o denumire și o listă de vecini
 2. Lista de culori posibile pentru colorarea hărții
 </p>
 
 
-##### Algoritm
+#### Algoritm
 Algoritmul de rezolvare a problemei constă în aplicarea unui algoritm de colorare a grafurilor, cum ar fi "Algoritmul Welsh-Powell" sau "Algoritmul greedy". Acesta va asigura colorarea hărții astfel încât nici două țări vecine să nu aibă aceeași culoare.
 </p>
 
