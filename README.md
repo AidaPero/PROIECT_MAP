@@ -6,6 +6,7 @@
 
 
  Această problemă este o aplicație a ***TEORIEI GRAFURILOR***, unde țările sunt reprezentate ca noduri ale unui graf, iar vecinii sunt muchii între aceste noduri.
+
 <img src="teoria_grafurilor.png" alt="Diagramă a Teoriei Grafurilor" width="400">
 
 
@@ -20,11 +21,13 @@ Algoritmul de rezolvare a problemei constă în aplicarea unui algoritm de color
 
 
 Pentru rezolvarea problemei, primul pas esențial este identificarea vecinilor fiecărei țări. Aceasta implică analizarea structurii de date care reprezintă harta și determinarea relațiilor de vecinătate între țări, ca în imaginea următoare:
+
 <img src="vecini.png" alt="Diagramă a vecinilor" width="400">
 
 
 După ce am identificat corect vecinii fiecărei țări, putem aplica un algoritm de colorare pentru a asigura că nicio țară nu împarte aceeași culoare cu vecinii săi. Un exemplu de astfel de algoritm este "Algoritmul greedy" care începe colorarea cu o țară oarecare și alege apoi pe rând culorile disponibile pentru vecinii săi.
 Rezultatul final al programului constă în atribuirea culorilor fiecărei țări, respectând condițiile impuse de relațiile de vecinătate. 
+
 <img src="colorat.png" alt="Diagramă a culorilor" width="400">
 
 
