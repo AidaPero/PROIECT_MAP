@@ -9,8 +9,8 @@
 
 <img src="teoria_grafurilor.png" alt="Diagramă a Teoriei Grafurilor" width="400"> <br>
 
-<p style="color:blue">
- ### Date de Intrare </p>
+
+ ### Date de Intrare 
 Programul primește următoarele informații:
 1. Lista celor N țări, fiecare având o denumire și o listă de vecini
 2. Lista de culori posibile pentru colorarea hărții <br>
