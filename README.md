@@ -7,5 +7,10 @@
 <img src="teoria_grafurilor.png" alt="Diagramă a Teoriei Grafurilor" width="400">
 
 
+Pentru rezolvarea problemei trebuie să identificăm vecinii fiecărei țări, ca în imaginea următoare:
+
+<img src="vecini.png" alt="Diagramă a vecinilor" width="400">
+
+
 
 
