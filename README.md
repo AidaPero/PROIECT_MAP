@@ -34,7 +34,10 @@ Rezultatul final al programului constă în atribuirea culorilor fiecărei țăr
 
 
 ### Rezultatul Codului
-<img src="map.png" alt="Diagramă a culorilor" width="300">
+Datele de Intrare:
+<img src="map.png" alt="Diagramă a culorilor" width="500">
+
+Datele de Ieșire:
 <img src="map2.png" alt="Diagramă a culorilor" width="300">
 
 
