@@ -11,14 +11,57 @@ struct Tara {
     int numarVecini;
 };
 
+void definesteTari(struct Tara tari[], int *numarTari) {
+    *numarTari = 5; // Seteaza numarul de tari
+
+    // Defineste numele tarilor
+    strcpy(tari[0].nume, "Tara1");
+    strcpy(tari[1].nume, "Tara2");
+    strcpy(tari[2].nume, "Tara3");
+    strcpy(tari[3].nume, "Tara4");
+    strcpy(tari[4].nume, "Tara5");
+
+    // Defineste vecinii pentru fiecare tara
+    tari[0].vecini[0] = 1;
+    tari[0].vecini[1] = 2;
+    tari[0].vecini[2] = 3;
+    tari[1].vecini[0] = 0;
+    tari[1].vecini[1] = 2;
+    tari[2].vecini[0] = 0;
+    tari[2].vecini[1] = 1;
+    tari[2].vecini[2] = 3;
+    tari[2].vecini[3] = 4;
+    tari[3].vecini[0] = 0;
+    tari[3].vecini[1] = 2;
+    tari[3].vecini[2] = 4;
+    tari[4].vecini[0] = 2;
+    tari[4].vecini[1] = 3;
+
+    // Setează numarul de vecini pentru fiecare tara
+    tari[0].numarVecini = 3;
+    tari[1].numarVecini = 2;
+    tari[2].numarVecini = 4;
+    tari[3].numarVecini = 3;
+    tari[4].numarVecini = 2;
+}
+
+void definesteCulori(char culori[][20], int *numarCulori) {
+    *numarCulori = 3; // Setează numarul de culori
+
+    // Defineste numele culorilor
+    strcpy(culori[0], "Albastru");
+    strcpy(culori[1], "Galben");
+    strcpy(culori[2], "Verde");
+}
+
 int esteCuloareDisponibila(struct Tara tari[], int taraIndex, int culoare, int numarTari) {
     for (int i = 0; i < tari[taraIndex].numarVecini; i++) {
         int vecinIndex = tari[taraIndex].vecini[i];
         if (tari[vecinIndex].culoare == culoare) {
-            return 0; // Culoarea este deja folosită de un vecin
+            return 0; // Culoarea este deja folosita de un vecin
         }
     }
-    return 1; // Culoarea este disponibilă
+    return 1; // Culoarea este disponibila
 }
 
 void coloreazaHarta(struct Tara tari[], int numarTari, char culori[][20], int numarCulori) {
@@ -41,48 +84,13 @@ void afiseazaRezultat(struct Tara tari[], int numarTari, char culori[][20]) {
 int main() {
     int numarTari, numarCulori;
 
-    printf("Introduceti numarul de tari: ");
-    scanf("%d", &numarTari);
-
-    if (numarTari <= 0 || numarTari > MAX_TARI) {
-        printf("Numar invalid de tari!\n");
-        return 1;
-    }
-
+    // Defineste tari
     struct Tara tari[MAX_TARI];
+    definesteTari(tari, &numarTari);
+
+    // Defineste culori
     char culori[MAX_TARI][20];
-
-    for (int i = 0; i < numarTari; i++) {
-        printf("Introduceti numele tarii %d: ", i + 1);
-        scanf(" %[^\n]", tari[i].nume);
-        tari[i].numarVecini = 0;
-    }
-
-    for (int i = 0; i < numarTari; i++) {
-        int numarVecini;
-        printf("Introduceti numarul de vecini pentru tara %s: ", tari[i].nume);
-        scanf("%d", &numarVecini);
-
-        printf("Introduceti vecinii pentru tara %s (indicii separati prin spatiu (1-n)): ", tari[i].nume);
-        for (int j = 0; j < numarVecini; j++) {
-            scanf("%d", &tari[i].vecini[j]);
-            tari[i].vecini[j]--; // Indicele în program începe de la 0
-            tari[i].numarVecini++;
-        }
-    }
-
-    printf("Introduceti numarul de culori disponibile: ");
-    scanf("%d", &numarCulori);
-
-    if (numarCulori <= 0) {
-        printf("Numar invalid de culori!\n");
-        return 1;
-    }
-
-    for (int i = 0; i < numarCulori; i++) {
-        printf("Introduceti numele culorii %d: ", i + 1);
-        scanf("%s", culori[i]);
-    }
+    definesteCulori(culori, &numarCulori);
 
     coloreazaHarta(tari, numarTari, culori, numarCulori);
 
