@@ -1,4 +1,4 @@
-# PROIECT_MAP
+# PROIECT SINCRETIC
 
 ## Problema Colorarii Hartilor in C
 
@@ -43,7 +43,7 @@ Tara4 este colorata cu Albastru
 Tara5 este colorata cu Galben
 ```
 
-
+## STUDENT: PERO AIDA  
 
 
 
