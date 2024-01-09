@@ -12,8 +12,8 @@
 
  ### Date de Intrare 
 Programul primește următoarele informații:
-1. Lista celor N țări, fiecare având o denumire și o listă de vecini
-2. Lista de culori posibile pentru colorarea hărții <br>
+- Lista celor N țări, fiecare având o denumire și o listă de vecini
+- Lista de culori posibile pentru colorarea hărții <br>
 
 
 ### Algoritm
