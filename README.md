@@ -34,14 +34,12 @@ Rezultatul final al programului constă în atribuirea culorilor fiecărei țăr
 
 
 ### Rezultatul Codului
-Datele de Intrare:
-
-<img src="map.png" alt="Diagramă a culorilor" width="400">
-
-
-Datele de Ieșire:
-
-<img src="map2.png" alt="Diagramă a culorilor" width="300">
+'Rezultatul colorarii hartii:
+Tara1 este colorata cu Galben
+Tara2 este colorata cu Albastru
+Tara3 este colorata cu Verde
+Tara4 este colorata cu Albastru
+Tara5 este colorata cu Galben'
 
 
 
