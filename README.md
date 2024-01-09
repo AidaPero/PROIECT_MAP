@@ -1,5 +1,4 @@
 # PROIECT SINCRETIC
-### Student: Pero Aida  
 
 ## Problema Colorarii Hartilor in C
 
@@ -44,7 +43,7 @@ Tara4 este colorata cu Albastru
 Tara5 este colorata cu Galben
 ```
 
-
+#### Student: Pero Aida  
 
 
 
