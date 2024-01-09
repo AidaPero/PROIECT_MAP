@@ -43,7 +43,14 @@ Tara4 este colorata cu Albastru
 Tara5 este colorata cu Galben
 ```
 
-#### Student: Pero Aida  
+### Rezumatul Codului
+- Funcție definire țări
+- Funcție definire culori
+- Funcție pentru verificarea culorilor disponibile
+- Funcție colorare hartă
+- Funcție afișare rezultat
+
+##### Student: Pero Aida  
 
 
 
