@@ -43,7 +43,7 @@ Tara4 este colorata cu Albastru
 Tara5 este colorata cu Galben
 ```
 
-## STUDENT: PERO AIDA  
+# Student: Pero Aida  
 
 
 
