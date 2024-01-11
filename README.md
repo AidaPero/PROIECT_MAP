@@ -33,7 +33,7 @@ Rezultatul final al programului constă în atribuirea culorilor fiecărei țăr
 <img src="colorat.png" alt="Diagramă a culorilor" width="300">
 
 
-### Rezultatul Codului
+### Rezultatul codului pentru 5 țări prestabilite
 ```markdown
 Rezultatul colorarii hartii:
 Tara1 este colorata cu Galben
